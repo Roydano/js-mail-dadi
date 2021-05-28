@@ -2,10 +2,10 @@
 
 // 1 - chiedere al giocatore di inserire il suo nome
 
-// var nome = prompt('Inserisci il tuo nome')
-// console.log(nome);
+var nome = prompt('Inserisci il tuo nome')
+console.log(nome);
 
-// document.getElementById('user').innerHTML = nome;
+document.getElementById('user').innerHTML = nome;
 
 // 2 - generare un numero random per il giocatore
 
