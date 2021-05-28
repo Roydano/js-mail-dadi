@@ -2,18 +2,26 @@
 
 // 1 - chiedere al giocatore di inserire il suo nome
 
-var nome = prompt('Inserisci il tuo nome')
-console.log(nome);
+// var nome = prompt('Inserisci il tuo nome')
+// console.log(nome);
+
+// document.getElementById('user').innerHTML = nome;
 
 // 2 - generare un numero random per il giocatore
 
 var numRandomUser = Math.floor(Math.random() * 6) + 1;
 console.log(numRandomUser);
 
+document.getElementById('lancio-user').innerHTML = numRandomUser;
+
+
 // 3 - generare un numero random per il pc
 
 var numRandomPc = Math.floor(Math.random() * 6) + 1;
 console.log(numRandomPc);
+
+document.getElementById('lancio-pc').innerHTML = numRandomPc;
+
 
 // 4 - dichiarare chi ha vinto in base al punteggio più alto
 
@@ -26,3 +34,5 @@ if (numRandomUser < numRandomPc){
 }
 
 console.log(risultato);
+
+document.getElementById('risultato').innerHTML = risultato;
