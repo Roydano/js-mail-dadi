@@ -2,8 +2,27 @@
 
 // 1 - chiedere al giocatore di inserire il suo nome
 
-// generare un numero random per il giocatore
+var nome = prompt('Inserisci il tuo nome')
+console.log(nome);
 
-// generare un numero random per il pc
+// 2 - generare un numero random per il giocatore
 
-// dichiarare chi ha vinto in base al punteggio più alto
+var numRandomUser = Math.floor(Math.random() * 6) + 1;
+console.log(numRandomUser);
+
+// 3 - generare un numero random per il pc
+
+var numRandomPc = Math.floor(Math.random() * 6) + 1;
+console.log(numRandomPc);
+
+// 4 - dichiarare chi ha vinto in base al punteggio più alto
+
+var risultato = 'Complimenti...Hai vinto!!!!'
+
+if (numRandomUser < numRandomPc){
+    risultato = 'Mi dispiace...Hai perso!';
+} else if (numRandomUser == numRandomPc){
+    risultato = 'Pareggio';
+}
+
+console.log(risultato);
